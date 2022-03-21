@@ -1,0 +1,124 @@
+body {
+  
+}
+.container {
+  display: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin: 20px;
+  background-color: rgb(202, 190, 190);
+
+  /* CSS GRID */
+
+  display: grid;
+  /* grid-template-columns: 200px 200px 100px 100px;
+  grid-template-columns: 200px 200px 1fr auto;
+  grid-template- rows: 1fr auto;
+  grid-template-rows: 300px 200px; */
+
+  /* use fractions / fr */
+
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr 1fr;
+  /* height: 500px; */
+  column-gap: 20px;
+  row-gap: 40px;
+  
+
+}
+/* span or moving  grid items */
+.box4 {
+  grid-column: 2 / 3;
+
+  /* also you can use -1 instead of span */
+
+  /* grid-column: 2 / -1; */
+  grid-row: 1 / 2;
+}
+.box8 {
+  /* grid-column: 1 / 4; */
+  grid-column: 1 / span 1;
+  grid-row: 1 / 2;
+}
+
+
+
+.box1 {
+  background-color: blue;
+}
+.box2 {
+  background-color: aqua;
+}
+.box3 {
+  background-color: blueviolet;
+  
+}
+.box4 {
+  background-color: brown;
+  height: 150px;
+}
+.box5 {
+  background-color: chocolate;
+} 
+.box6 {
+  background-color: black;
+}
+.box7 {
+  background-color: cornflowerblue;
+}
+.box8 {
+  background-color: darksalmon;
+}
+
+
+/* Aligning items with grid */
+
+.container-2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin: 30px;
+  background-color: black;
+  height: 600px;
+  width: 700px;display: grid;
+  grid-template-columns: 125px 100px 125px 100px;
+  grid-template-rows: 200px 100px;
+  row-gap: 20px;
+  column-gap: 10px;
+
+  /* aligning tracks inside container:distribute empty space */
+  align-content: center;
+  justify-content: center;
+   
+  /* aligning items inside cells: moving items around inside cells */
+  align-items: center;
+  justify-items: center;
+
+}
+/* aligning self */
+.ell--2 {
+  align-self: end;
+  justify-self: center;
+
+
+}
+.ell--1 {
+  background-color: blue;
+}
+.ell--2 {
+  background-color: red;
+}
+.ell--3 {
+  background-color: cornflowerblue;
+}
+.ell--4 {
+  background-color: aqua;
+  height: 150px;
+}
+.ell--5 {
+  background-color: chartreuse;
+
+}
+.ell--6 {
+  background-color: aquamarine;
+}
